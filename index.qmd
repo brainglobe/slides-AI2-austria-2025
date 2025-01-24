@@ -44,14 +44,13 @@ my-custom-stuff:
 ---
 # [Neuroinformatics Unit](https://neuroinformatics.dev/people){preview-link="true" style="text-align: center"}
 
-# [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/about-swc){preview-link="true" style="text-align: center"}
+# [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/about-swc){preview-link="false" style="text-align: center"}
 
-# [UCL Centre for Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/){preview-link="true" style="text-align: center"}
+# [UCL Centre for Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/){preview-link="false" style="text-align: center"}
 
-# [UCL Bioimage Interest Group](https://www.ucl.ac.uk/science-technology-platforms/imaging/ucl-bioimage-interest-group){preview-link="true" style="text-align: center"}
+# [UCL Bioimage Interest Group](https://www.ucl.ac.uk/science-technology-platforms/imaging/ucl-bioimage-interest-group){preview-link="false" style="text-align: center"}
 
 {{< include slides/brainglobe.qmd >}}
-
 
 ## Acknowledgements
 
@@ -60,70 +59,3 @@ my-custom-stuff:
 * past and present BrainGlobe contributors
 * CZI
 
-
-## Contents
-
-Some example slides - [also look at example RevealJS slides in the Quarto docs](https://quarto.org/docs/presentations/revealjs/)
-
-* Non-executable and executable code-blocks
-* bullet points with highlighting 
-* two-column slides 
-* how to include a slide from a separate MD file
-* preview and link to a webpage
-
-## Just a code block, nothing gets executed...
-
-... but there is some fancy highlighting
-
-```{.python code-line-numbers="1|3|4-9"}
-from pathlib import Path
-
-home_path = Path.home()
-if home_path.exists():
-  data_path = home_path / "data"
-else:
-  pass
-  # raise some error maybe?
-```
-
-## A code block that's actually executed at render-time
-
-```{python}
-#| echo: true
-#| code-fold: true
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-## You can execute code without showing that you have by using #|echo: false
-```{python}
-#| echo: false
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-{{< include slides/extra_slide.qmd >}}
-
-## An example image
-
-Include an image:
-
-![](img/bg_logo_wide.png){width=900 fig-align=center}
-
-
-## Link and a preview a webpage:
-
-::: {style="text-align: center; margin-top: 1em"}
-[interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
-:::
-
-## Use a variable several times
-
-Variables defined in the metadata is re-useable anywhere
-
-* {{< meta my-custom-stuff.my-reuseable-variable >}}
-* {{< meta my-custom-stuff.my-reuseable-variable >}}

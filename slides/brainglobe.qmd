@@ -16,39 +16,70 @@ Established 2020 with three aims:
 :::
 :::
 
-## What is an atlas? {.smaller}
+## BrainGlobe Initiative {.smaller}
 
-:::: {.columns}
-
-::: {.column width="50%"}
-![](img/allen_mouse_template.png){fig-align=center}
-:::
-
-::: {.column width="50%"}
-![](img/allen_mouse_annotation.png){fig-align=center}
-:::
-
-::::
-
-[(Neuro-anatomical) Atlases](https://neuroinformatics.dev/slides-templates-atlases/) consist of a template image and an annotations image (E.g. [The Allen Mouse Brain Common Coordinate Framework](https://doi.org/10.1016/j.cell.2020.04.007))
-
-## Why is it useful?
-
-A standardised annotation, standardised coordinate system to which experimental data can be registered, facilitate data comparability and (re-)combination, and therefore collaboration and data sharing.
-
-[Have accelerated neuroscientific discovery, for species where there is an atlas!](https://docs.google.com/presentation/d/1NpZva4iIX3OW9Uc-Gxk9lc7nCH7kHUgGAA9-xwjXhKc/edit#slide=id.g30d92c812f7_0_3)
-
-## BrainGlobe Atlas API
 Initial observation - lots of similar communities working independently
 
+::: {.columns}
+::: {.column width="55%"}
+
+:::{incremental}
 - Model species
 - Imaging modality
 - Anatomical focus
 - Developmental stage
+:::
+
+:::
+
+::: {.column width="45%"}
+![](img/tracing.png)
+:::
+:::
 
 ::: footer
 [Claudi, F. et al. (2020) “BrainGlobe Atlas API: a common interface for neuroanatomical atlases” JOSS, v5(54), 2668 ](https://doi.org/10.21105/joss.02668)
 :::
+
+## Contents {.smaller}
+::: {.columns}
+::: {.column width="55%"}
+
+:::{.incremental}
+* Atlases and the BrainGlobe Atlas API
+* Established BrainGlobe tools
+* Experimental BrainGlobe tools
+:::
+
+:::
+::: {.column width="45%"}
+![](img/tracing.png)
+:::
+:::
+
+
+## What is an atlas? {.smaller}
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img/allen_mouse_template.png){fig-align=center}
+:::
+
+::: {.column width="45%"}
+![](img/allen_mouse_annotation.png){fig-align=center}
+:::
+::::
+(Neuro-anatomical) atlases consist of a template image, an annotations image and metadata (E.g. [The Allen Mouse Brain Common Coordinate Framework](https://doi.org/10.1016/j.cell.2020.04.007))
+
+## Why is it useful?
+
+* A standardised annotation and a standardised coordinate system 
+* Allows registering experimental data can be registered
+
+This facilitates data comparability and (re-)combination, 
+and therefore collaboration and data sharing.
+
+Have accelerated neuroscientific discovery, for species where there is an atlas!
 
 ## BrainGlobe Atlas API
 ### [brainglobe-atlasapi](https://github.com/brainglobe/brainglobe-atlasapi)
@@ -118,7 +149,7 @@ pprint(VISp)
 :::
 
 
-# Version 1
+# Established BrainGlobe Tools
 
 ## Whole brain microscopy {.smaller}
 ::: {.columns}
@@ -249,7 +280,7 @@ Light sheet fluorescence microscopy
 [Claudi, F. et al. (2021) “Visualizing anatomically registered data with Brainrender” eLife, 10:e65751](https://doi.org/10.7554/eLife.65751)
 :::
 
-# Version 2
+# Experimental BrainGlobe Tools
 Expanding access
 
 ## Adding new atlases {.smaller}
@@ -262,21 +293,6 @@ Expanding access
 - NHP
 - Human
 
-## Building novel atlases
-![](img/blackcap.png){fig-align="center" width=120%}
-
-::: footer
-[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
-:::
-
-## More raw data processing
-![](img/brainglobe-stitch.png){fig-align="center"}
-
-::: footer
-[github.com/brainglobe/brainglobe-stitch](https://github.com/brainglobe/brainglobe-stitch)
-:::
-
-
 ## Consistent napari environment
 ![](img/brainrender-napari.png){fig-align="center"}
 
@@ -284,12 +300,122 @@ Expanding access
 [github.com/brainglobe/brainrender-napari](https://github.com/brainglobe/brainrender-napari)
 :::
 
+## More raw data processing
+
+![](img/stitch.gif){fig-align="center"}
+
+::: footer
+[github.com/brainglobe/brainglobe-stitch](https://github.com/brainglobe/brainglobe-stitch), led by
+[Igor Tatarnikov](https://github.com/IgorTatarnikov)
+:::
+
+## More raw data processing
+![](img/brainglobe-stitch.png){fig-align="center"}
+
+::: footer
+[github.com/brainglobe/brainglobe-stitch](https://github.com/brainglobe/brainglobe-stitch), led by
+[Igor Tatarnikov](https://github.com/IgorTatarnikov)
+:::
+
+
 ## Support for more data types
+
+![](img/registered_data_atlas.png){fig-align="center" width=90%}
+![](img/registered_data_atlas_annotations_tra.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration), led by
+[Igor Tatarnikov](https://github.com/IgorTatarnikov)
+:::
+
+## Support for more data types
+
 ![](img/brainglobe-registration-demo.png){fig-align="center"}
 
 ::: footer
-[github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration)
+[github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration), led by
+[Igor Tatarnikov](https://github.com/IgorTatarnikov)
 :::
 
+## Building novel atlases - An atlas for the Eurasian Blackcap {.smaller}
+
+![](img/blackcap_figure1.png){fig-align="center" width=100%}
+
+The Eurasian Blackcap is a migratory songbird, and a model for magnetoprocessing in the brain.
+
+
+::: footer
+With ["Neurosensorik/Animal Navigation" group at Carl von Ossietzky University of Oldernburg](https://uol.de/ibu/neurosensorik).
+
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder), co-led by [Niko Sirmpilatze](https://github.com/niksirbi)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure2.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure3.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure3_SNR.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure3_closeupSNR.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure4.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/blackcap_figure5.png){fig-align="center" width=100%}
+
+::: footer
+[github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+:::{.columns}
+:::{.column width=50%}
+- other brains
+    - African mole-rat
+    - Zebrafinch
+    - Crab
+    - Fiddler ray
+    - ...?
+:::
+
+:::{.column width=50%}
+- other organs?
+    - mouse bones?
+    - fly wing discs?
+:::
+
+:::
 
 # [BrainGlobe website](https://brainglobe.info/){preview-link="true" style="text-align: center"}
