@@ -1,7 +1,7 @@
 ---
 title: BrainGlobe
-subtitle: community-driven tools for computational neuroanatomy
-author: Alessandro Felder
+subtitle: community-driven tools for (atlas-based) computational neuroanatomy
+author: "**Alessandro Felder**, Adam Tyson, Niko Sirmpilatze, Igor Tatarnikov"
 execute: 
   enabled: true
 format:
@@ -44,16 +44,21 @@ my-custom-stuff:
 ---
 # [Neuroinformatics Unit](https://neuroinformatics.dev/people){preview-link="true" style="text-align: center"}
 
+# [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/about-swc){preview-link="true" style="text-align: center"}
 
-{{< include slides/brainglobe1.qmd >}}
+# [UCL Centre for Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/){preview-link="true" style="text-align: center"}
+
+# [UCL Bioimage Interest Group](https://www.ucl.ac.uk/science-technology-platforms/imaging/ucl-bioimage-interest-group){preview-link="true" style="text-align: center"}
+
+{{< include slides/brainglobe.qmd >}}
 
 
 ## Acknowledgements
 
-* Adam Tyson
-* Niko Sirmpilatze
-* Igor Tatarnikov
+* Adam Tyson, Niko Sirmpilatze, Igor Tatarnikov
+* Harry Carey
 * past and present BrainGlobe contributors
+* CZI
 
 
 ## Contents

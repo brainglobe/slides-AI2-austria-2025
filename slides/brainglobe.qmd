@@ -16,6 +16,27 @@ Established 2020 with three aims:
 :::
 :::
 
+## What is an atlas? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](img/allen_mouse_template.png){fig-align=center}
+:::
+
+::: {.column width="50%"}
+![](img/allen_mouse_annotation.png){fig-align=center}
+:::
+
+::::
+
+[(Neuro-anatomical) Atlases](https://neuroinformatics.dev/slides-templates-atlases/) consist of a template image and an annotations image (E.g. [The Allen Mouse Brain Common Coordinate Framework](https://doi.org/10.1016/j.cell.2020.04.007))
+
+## Why is it useful?
+
+A standardised annotation, standardised coordinate system to which experimental data can be registered, facilitate data comparability and (re-)combination, and therefore collaboration and data sharing.
+
+[Have accelerated neuroscientific discovery, for species where there is an atlas!](https://docs.google.com/presentation/d/1NpZva4iIX3OW9Uc-Gxk9lc7nCH7kHUgGAA9-xwjXhKc/edit#slide=id.g30d92c812f7_0_3)
 
 ## BrainGlobe Atlas API
 Initial observation - lots of similar communities working independently
@@ -24,7 +45,6 @@ Initial observation - lots of similar communities working independently
 - Imaging modality
 - Anatomical focus
 - Developmental stage
-
 
 ::: footer
 [Claudi, F. et al. (2020) “BrainGlobe Atlas API: a common interface for neuroanatomical atlases” JOSS, v5(54), 2668 ](https://doi.org/10.21105/joss.02668)
