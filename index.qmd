@@ -112,8 +112,8 @@ Have accelerated neuroscientific discovery, for species where there is an atlas!
 
 * Adam Tyson, Niko Sirmpilatze, Igor Tatarnikov
 * past and present BrainGlobe contributors
-* funders
 
-![](img/Chan_Zuckerberg_Initiative.png)
+![](img/Chan_Zuckerberg_Initiative.png) ![](img/swc.webp){width=50%}
+![](img/funders.webp)
 
 # [BrainGlobe website](https://brainglobe.info/){preview-link="true" style="text-align: center"}
