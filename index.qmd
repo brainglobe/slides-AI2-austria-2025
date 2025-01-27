@@ -1,7 +1,7 @@
 ---
 title: BrainGlobe
 subtitle: community-driven tools for (atlas-based) computational neuroanatomy
-author: "**Alessandro Felder**, Adam Tyson, Niko Sirmpilatze, Igor Tatarnikov"
+author: "Alessandro Felder"
 execute: 
   enabled: true
 format:
@@ -42,20 +42,78 @@ format:
 my-custom-stuff:
    my-reuseable-variable: "I can use this wherever I want in the markdown, and change it in only once place :)"
 ---
-# [Neuroinformatics Unit](https://neuroinformatics.dev/people){preview-link="true" style="text-align: center"}
 
-# [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/about-swc){preview-link="false" style="text-align: center"}
+## Contents {.smaller}
+::: {.columns}
+::: {.column width="55%"}
 
-# [UCL Centre for Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/){preview-link="false" style="text-align: center"}
+:::{.incremental}
+* Introduction
+* What is an atlas?
+* What is BrainGlobe?
+* BrainGlobe Atlas API
+* Established BrainGlobe tools
+* Experimental BrainGlobe tools
+:::
 
-# [UCL Bioimage Interest Group](https://www.ucl.ac.uk/science-technology-platforms/imaging/ucl-bioimage-interest-group){preview-link="false" style="text-align: center"}
+:::
+::: {.column width="45%"}
+![](img/tracing.png)
+:::
+:::
+
+## Introduction
+
+![](img/alessandro.png)
+
+## Introduction {.smaller}
+
+![](img/swc_building_cropped.jpg)
+
+:::{.columns}
+:::{.column width=50%}
+* [Neuroinformatics Unit](https://neuroinformatics.dev/people){preview-link="true" style="text-align: center"}
+  * [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/about-swc){preview-link="false" style="text-align: center"}
+:::
+
+:::{.column width=50%}
+* [UCL Centre for Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/){preview-link="false" style="text-align: center"}
+* [UCL Bioimage Interest Group](https://www.ucl.ac.uk/science-technology-platforms/imaging/ucl-bioimage-interest-group){preview-link="false" style="text-align: center"}
+:::
+:::
+
+
+## What is an atlas? {.smaller}
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img/allen_mouse_template.png){fig-align=center}
+:::
+
+::: {.column width="45%"}
+![](img/allen_mouse_annotation.png){fig-align=center}
+:::
+::::
+(Neuro-anatomical) atlases consist of a template image, an annotations image and metadata (E.g. [The Allen Mouse Brain Common Coordinate Framework](https://doi.org/10.1016/j.cell.2020.04.007))
+
+## Why is it useful?
+
+* A standardised annotation and a standardised coordinate system 
+* Allows registering experimental data can be registered
+
+This facilitates data comparability and (re-)combination, 
+and therefore collaboration and data sharing.
+
+Have accelerated neuroscientific discovery, for species where there is an atlas!
 
 {{< include slides/brainglobe.qmd >}}
 
 ## Acknowledgements
 
 * Adam Tyson, Niko Sirmpilatze, Igor Tatarnikov
-* Harry Carey
 * past and present BrainGlobe contributors
-* CZI
+* funders
 
+![](img/Chan_Zuckerberg_Initiative.png)
+
+# [BrainGlobe website](https://brainglobe.info/){preview-link="true" style="text-align: center"}

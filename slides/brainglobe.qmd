@@ -1,24 +1,6 @@
 ## BrainGlobe Initiative {.smaller}
 
-::: {.columns}
-::: {.column width="55%"}
-Established 2020 with three aims:
-
-:::{.incremental}
-1. Develop general-purpose tools to help others build interoperable software
-2. Develop specialist software for specific analysis and visualisation needs
-3. Reduce barriers of entry, and facilitate the building of an ecosystem of computational neuroanatomy tools.
-:::
-
-:::
-::: {.column width="45%"}
-![](img/tracing.png)
-:::
-:::
-
-## BrainGlobe Initiative {.smaller}
-
-Initial observation - lots of similar communities working independently
+Initial observation - lots of similar communities working independently with brain atlases
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -41,14 +23,16 @@ Initial observation - lots of similar communities working independently
 [Claudi, F. et al. (2020) “BrainGlobe Atlas API: a common interface for neuroanatomical atlases” JOSS, v5(54), 2668 ](https://doi.org/10.21105/joss.02668)
 :::
 
-## Contents {.smaller}
+## BrainGlobe Initiative {.smaller}
+
 ::: {.columns}
 ::: {.column width="55%"}
+Established 2020 with three aims:
 
 :::{.incremental}
-* Atlases and the BrainGlobe Atlas API
-* Established BrainGlobe tools
-* Experimental BrainGlobe tools
+1. Develop general-purpose tools to help others build interoperable software
+2. Develop specialist software for specific analysis and visualisation needs
+3. Reduce barriers of entry, and facilitate the building of an ecosystem of computational neuroanatomy tools.
 :::
 
 :::
@@ -56,30 +40,6 @@ Initial observation - lots of similar communities working independently
 ![](img/tracing.png)
 :::
 :::
-
-
-## What is an atlas? {.smaller}
-
-:::: {.columns}
-::: {.column width="45%"}
-![](img/allen_mouse_template.png){fig-align=center}
-:::
-
-::: {.column width="45%"}
-![](img/allen_mouse_annotation.png){fig-align=center}
-:::
-::::
-(Neuro-anatomical) atlases consist of a template image, an annotations image and metadata (E.g. [The Allen Mouse Brain Common Coordinate Framework](https://doi.org/10.1016/j.cell.2020.04.007))
-
-## Why is it useful?
-
-* A standardised annotation and a standardised coordinate system 
-* Allows registering experimental data can be registered
-
-This facilitates data comparability and (re-)combination, 
-and therefore collaboration and data sharing.
-
-Have accelerated neuroscientific discovery, for species where there is an atlas!
 
 ## BrainGlobe Atlas API
 ### [brainglobe-atlasapi](https://github.com/brainglobe/brainglobe-atlasapi)
@@ -149,6 +109,29 @@ pprint(VISp)
 :::
 
 
+## Non-BrainGlobe tools that use the Atlas API
+
+"For reference atlases, ABBA can load the Allen
+mouse brain atlas CCFv3 (Wang et al., 2020) or the Waxholm Rat atlas v4 (Papp et
+al., 2014; Kleven et al., 2023) or any other BrainGlobe compatible atlas (Claudi et al.,
+2020)."
+
+::: footer
+ABBA, a novel tool for whole-brain mapping, reveals brain-wide differences in immediate early genes induction following learning, 
+
+[Chiaruttini et al, Biorxiv 2024](https://doi.org/10.1101/2024.09.06.611625)
+:::
+
+## Non-BrainGlobe tools that use the Atlas API
+
+"To support the CCF and other atlases, we developed the BrainAtlas for Unity package, which is a wrapper around the BrainGlobe brain-atlas Python package (Claudi et al., 2020)."
+
+::: footer
+Pinpoint: trajectory planning for multi-probe electrophysiology and injections in an interactive web-based 3D environment, 
+
+[Birman et al, eLife, 2023](https://doi.org/10.7554/eLife.91662.1)
+:::
+
 # Established BrainGlobe Tools
 
 ## Whole brain microscopy {.smaller}
@@ -169,7 +152,6 @@ Light sheet fluorescence microscopy
 :::
 
 ![](img/microscopy.png){fig-align="center" width=110%}
-
 
 ## 
 ![](img/whole.png){fig-align="center" width=70%}
@@ -286,7 +268,7 @@ Expanding access
 ## Adding new atlases {.smaller}
 - Latest version of Waxholm rat
 - Axolotl
-- Prarie Vole
+- Prairie Vole
 - Princeton RAtlas
 - Cuttlefish
 - Developmental Mouse Brain atlas
@@ -320,8 +302,15 @@ Expanding access
 
 ## Support for more data types
 
+:::{.columns}
+:::{.column width=50%}
 ![](img/registered_data_atlas.png){fig-align="center" width=90%}
+:::
+
+:::{.column width=50%}
 ![](img/registered_data_atlas_annotations_tra.png){fig-align="center" width=100%}
+:::
+:::
 
 ::: footer
 [github.com/brainglobe/brainglobe-registration](https://github.com/brainglobe/brainglobe-registration), led by
@@ -345,17 +334,27 @@ The Eurasian Blackcap is a migratory songbird, and a model for magnetoprocessing
 
 
 ::: footer
-With ["Neurosensorik/Animal Navigation" group at Carl von Ossietzky University of Oldernburg](https://uol.de/ibu/neurosensorik).
+With ["Neurosensorik/Animal Navigation" group at Carl von Ossietzky University of Oldenburg](https://uol.de/ibu/neurosensorik).
 
 [github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder), co-led by [Niko Sirmpilatze](https://github.com/niksirbi)
 :::
 
 ## Building novel atlases
 
-![](img/blackcap_figure2.png){fig-align="center" width=100%}
+![](img/blackcap_figure2.png){fig-align="center" width=130%}
 
 ::: footer
 [github.com/brainglobe/brainglobe-template-builder](https://github.com/brainglobe/brainglobe-template-builder)
+:::
+
+## Building novel atlases
+
+![](img/ANTs-Template-Construction.png){width=900 fig-align=center}
+
+Good template images are an unbiased average of many (~10-1000s) of individuals. This requires many image registrations of increasing complexity.
+
+::: footer
+[Devenyi, G. A. (2024). optimized_antsMultivariateTemplateConstruction (Version 1.0) [Computer software].](https://github.com/CoBrALab/optimized_antsMultivariateTemplateConstruction)
 :::
 
 ## Building novel atlases
@@ -418,4 +417,3 @@ With ["Neurosensorik/Animal Navigation" group at Carl von Ossietzky University o
 
 :::
 
-# [BrainGlobe website](https://brainglobe.info/){preview-link="true" style="text-align: center"}
